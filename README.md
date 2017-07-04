@@ -1,30 +1,14 @@
 # study-vue
 
-> A Vue.js project
+> Vue 스터디용 프로젝트
 
-## Build Setup
+## 학습 내용
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+- Vue 기본 구조
+- Component 생명주기
+- Component Property (Methods, Datas, Watch, Computed) 등 Polymer와 비교하며 테스트
+- 기본 예제 만들어보기
+- Vuex 활용 및 필요성 찾아보기
+- 속도 및 메모리 성능 관련 체크
+- hot reload 등 개발자 편의도구 방식 알아보기
+- vue data를 파싱할 수 있는지 여부 확인 및 다른 프로젝트에서 활용 가능 여부 확인
