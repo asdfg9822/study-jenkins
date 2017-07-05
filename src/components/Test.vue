@@ -68,6 +68,23 @@
 
       <!-- v-if 와 v-show의 차이 -->
       <!-- v-if는 조건부 렌더딩, v-show는 렌더링 후 CSS 기반 토글 -->
+
+      <!--v-for를 사용하여 반복문을 돌릴 수 있다-->
+      <ul>
+        <li v-for="(item, index) in items">
+          {{ parentMessage }} - {{ index }} - {{ item.message }}
+        </li>
+      </ul>
+      <ul>
+        <li v-for="item of items">
+          {{ parentMessage }} - {{ index }} - {{ item.message }}
+        </li>
+      </ul>
+      <ul>
+        <li v-for="(value, key, index) in obj">
+          {{ value + key + index }}
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -81,7 +98,15 @@ export default {
       rawHtml: '<h1>hi</h1>',
       msgWatch: '',
       isActive: true,
-      cnt: 0
+      cnt: 0,
+      items: [
+        { message: 'Foo' },
+        { message: 'Bar' }
+      ],
+      obj: {
+        prop1: 'hi',
+        prop2: 'my'
+      }
     }
   },
 
